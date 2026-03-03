@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio Personal | Andrea Mora Blas</title>
+    <!-- Tailwind CSS para el diseño -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Configuración de colores terrosos -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        tierra: {
+                            50: '#fbfaf9',
+                            100: '#f4efe8',
+                            200: '#e8dcd0',
+                            300: '#d7c2ae',
+                            400: '#c1a187',
+                            500: '#b08768',
+                            600: '#a37458',
+                            700: '#885e48',
+                            800: '#714e3e',
+                            900: '#5c4135',
+                        },
+                        acento: {
+                            50: '#f4f6f4',
+                            100: '#e4ebe4',
+                            800: '#3a4f3a',
+                            900: '#314231',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Merriweather', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Fuente de Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Merriweather:ital,wght@0,300;0,400;0,700;1,300&display=swap" rel="stylesheet">
+    <!-- Iconos -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <!-- Chart.js para el gráfico -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3, .font-serif { font-family: 'Merriweather', serif; }
+    </style>
+</head>
+<body class="bg-tierra-50 text-tierra-900 antialiased selection:bg-tierra-200 selection:text-tierra-900">
+
+    <!-- Navegación -->
+    <nav class="fixed w-full bg-white/90 backdrop-blur-md border-b border-tierra-200 z-50 transition-all duration-300">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex-shrink-0 flex items-center">
+                    <span class="font-serif font-bold text-xl tracking-tight text-tierra-800">AMB.</span>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#inicio" class="text-tierra-600 hover:text-tierra-900 transition-colors text-sm font-medium">Inicio</a>
+                    <a href="#trayectoria" class="text-tierra-600 hover:text-tierra-900 transition-colors text-sm font-medium">Trayectoria</a>
+                    <a href="#dafo" class="text-tierra-600 hover:text-tierra-900 transition-colors text-sm font-medium">Análisis DAFO</a>
+                    <a href="#orientacion" class="text-tierra-600 hover:text-tierra-900 transition-colors text-sm font-medium">Orientación</a>
+                    <a href="#valores" class="text-tierra-600 hover:text-tierra-900 transition-colors text-sm font-medium">Valores</a>
+                </div>
+                <!-- Menú móvil -->
+                <div class="md:hidden flex items-center">
+                    <button class="text-tierra-600 hover:text-tierra-900" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">
+                        <i data-lucide="menu"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Menú móvil desplegable -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-tierra-200">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="#inicio" class="block px-3 py-2 text-base font-medium text-tierra-700 hover:text-tierra-900 hover:bg-tierra-50">Inicio</a>
+                <a href="#trayectoria" class="block px-3 py-2 text-base font-medium text-tierra-700 hover:text-tierra-900 hover:bg-tierra-50">Trayectoria</a>
+                <a href="#dafo" class="block px-3 py-2 text-base font-medium text-tierra-700 hover:text-tierra-900 hover:bg-tierra-50">DAFO</a>
+                <a href="#orientacion" class="block px-3 py-2 text-base font-medium text-tierra-700 hover:text-tierra-900 hover:bg-tierra-50">Orientación</a>
+                <a href="#valores" class="block px-3 py-2 text-base font-medium text-tierra-700 hover:text-tierra-900 hover:bg-tierra-50">Valores</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Sección Inicio (Introducción) -->
+    <section id="inicio" class="pt-32 pb-20 px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto">
+        <div class="flex flex-col md:flex-row items-center gap-12">
+            <div class="md:w-1/2 space-y-6">
+                <div class="inline-flex items-center px-3 py-1 rounded-full bg-tierra-100 text-tierra-700 text-sm font-medium mb-4">
+                    <i data-lucide="chef-hat" class="w-4 h-4 mr-2"></i> Proyecto de Clase 2025-2026
+                </div>
+                <h1 class="text-4xl md:text-5xl lg:text-6xl text-tierra-900 leading-tight">
+                    Hola, soy <br><span class="text-tierra-600 italic">Andrea Mora Blas</span>
+                </h1>
+                <p class="text-lg text-tierra-700 leading-relaxed">
+                    Bienvenidos a mi portafolio de orientación. Soy una persona apasionada por el trabajo manual, dinámico y creativo. A través de estas páginas recojo mi evolución personal: desde mis estudios artísticos hasta mi vocación actual en el exigente y apasionante mundo de la cocina.
+                </p>
+                <div class="pt-4">
+                    <a href="#trayectoria" class="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-tierra-700 hover:bg-tierra-800 transition-colors shadow-sm">
+                        Conoce mi trayectoria
+                        <i data-lucide="arrow-down" class="ml-2 w-4 h-4"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="md:w-1/2 relative">
+                <div class="aspect-square bg-tierra-200 rounded-2xl overflow-hidden relative shadow-lg">
+                    <!-- Placeholder de imagen decorativa con tonos terrosos -->
+                    <div class="absolute inset-0 bg-gradient-to-tr from-tierra-300 to-tierra-100 opacity-80"></div>
+                    <div class="absolute inset-0 flex items-center justify-center text-tierra-500">
+                        <i data-lucide="utensils-crossed" class="w-32 h-32 opacity-20"></i>
+                    </div>
+                    <img src="https://images.unsplash.com/photo-1600565193348-f74bd3c7ccdf?auto=format&fit=crop&q=80" alt="Cocina y arte" class="absolute inset-0 w-full h-full object-cover mix-blend-overlay opacity-50">
+                </div>
+                <!-- Decoración -->
+                <div class="absolute -bottom-6 -left-6 w-24 h-24 bg-acento-100 rounded-full -z-10"></div>
+                <div class="absolute -top-6 -right-6 w-32 h-32 bg-tierra-100 rounded-full -z-10"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección 1: Trayectoria (Pregunta 1) -->
+    <section id="trayectoria" class="py-20 bg-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-serif text-tierra-800 mb-4">De la Pintura a los Fogones</h2>
+                <div class="w-24 h-1 bg-tierra-300 mx-auto rounded-full"></div>
+            </div>
+
+            <div class="space-y-12">
+                <div class="flex gap-6 items-start">
+                    <div class="flex-shrink-0 w-12 h-12 bg-tierra-100 rounded-full flex items-center justify-center text-tierra-600">
+                        <i data-lucide="palette"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-semibold mb-2 text-tierra-900">Los Inicios Artísticos</h3>
+                        <p class="text-tierra-700 leading-relaxed mb-4">
+                            De pequeña quería ser artista o dedicarme a la creación manual. Al terminar la ESO, dudé entre el camino científico y el artístico, pero me decanté por el Bachillerato de Artes porque la gente relacionada con la creación encajaba mejor conmigo.
+                        </p>
+                        <p class="text-tierra-700 leading-relaxed">
+                            Posteriormente cursé un Ciclo Superior de artes aplicadas al muro. Aprendí mucho, pero descubrí que el mundo del arte actual (galerías, falta de estabilidad económica, estrés creativo sin motivación propia) no era el entorno donde quería desarrollar mi carrera.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="flex gap-6 items-start">
+                    <div class="flex-shrink-0 w-12 h-12 bg-tierra-100 rounded-full flex items-center justify-center text-tierra-600">
+                        <i data-lucide="flame"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-semibold mb-2 text-tierra-900">El Descubrimiento de la Cocina</h3>
+                        <p class="text-tierra-700 leading-relaxed mb-4">
+                            Mientras decidía mi futuro y ahorraba para ir a Bellas Artes a Barcelona, fui a Lleida a trabajar como ayudante de cocina en un hotel (reconocido en guías gastronómicas).
+                        </p>
+                        <p class="text-tierra-700 leading-relaxed">
+                            Ahí me di cuenta de que, aunque era un oficio muy exigente, <strong>disfrutaba enormemente de su dinámica</strong>: el trabajo manual, la creación de platos, el ritmo rápido, la tensión y el trabajo en equipo.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="flex gap-6 items-start">
+                    <div class="flex-shrink-0 w-12 h-12 bg-tierra-100 rounded-full flex items-center justify-center text-tierra-600">
+                        <i data-lucide="map-pin"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-semibold mb-2 text-tierra-900">El Presente</h3>
+                        <p class="text-tierra-700 leading-relaxed">
+                            Al volver a Reus, surgió la oportunidad de trabajar como ayudante de cocina en el restaurante <em>La Boella</em>. He vuelto a disfrutar del oficio y actualmente estoy estudiando cocina para desarrollarme profesionalmente y aprender más técnicas, teoría y práctica. Aunque a mi entorno al principio le costó asimilar el cambio del arte a la cocina, hoy me apoyan plenamente.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección 2: Análisis DAFO y CAME -->
+    <section id="dafo" class="py-20 bg-tierra-50">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-serif text-tierra-800 mb-4">Análisis Estratégico Personal</h2>
+                <p class="text-tierra-600 max-w-2xl mx-auto">Conclusiones extraídas de mis ejercicios DAFO (Debilidades, Amenazas, Fortalezas, Oportunidades) y su correspondiente plan de acción CAME.</p>
+                <div class="w-24 h-1 bg-tierra-300 mx-auto rounded-full mt-6"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Debilidades / Corregir -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-tierra-100 hover:shadow-md transition-shadow relative overflow-hidden group">
+                    <div class="absolute top-0 right-0 w-2 h-full bg-[#c9a68c]"></div>
+                    <div class="flex items-center mb-6">
+                        <i data-lucide="trending-down" class="w-6 h-6 text-[#c9a68c] mr-3"></i>
+                        <h3 class="text-xl font-semibold text-tierra-900">Debilidades <span class="text-sm font-normal text-tierra-500 ml-2">(Corregir)</span></h3>
+                    </div>
+                    <ul class="space-y-4 mb-6">
+                        <li class="flex items-start"><span class="text-[#c9a68c] mr-2">•</span><span class="text-tierra-700 text-sm">Miedo al cambio, a salir de la zona de confort y aventurarme.</span></li>
+                        <li class="flex items-start"><span class="text-[#c9a68c] mr-2">•</span><span class="text-tierra-700 text-sm">Sobrepensar las cosas o preguntar demasiado (posibles conflictos).</span></li>
+                    </ul>
+                    <div class="bg-tierra-50 p-4 rounded-xl border border-tierra-100">
+                        <h4 class="text-sm font-semibold text-tierra-800 mb-2 flex items-center"><i data-lucide="target" class="w-4 h-4 mr-1"></i> Plan de Acción</h4>
+                        <ul class="space-y-2 text-sm text-tierra-600">
+                            <li>- Establecer metas pequeñas progresivas.</li>
+                            <li>- Practicar toma de decisiones con tiempo límite.</li>
+                            <li>- Aprender comunicación asertiva.</li>
+                            <li>- Plan de retos mensuales con riesgo controlado.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Amenazas / Afrontar -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-tierra-100 hover:shadow-md transition-shadow relative overflow-hidden">
+                    <div class="absolute top-0 right-0 w-2 h-full bg-[#8c6b5d]"></div>
+                    <div class="flex items-center mb-6">
+                        <i data-lucide="alert-triangle" class="w-6 h-6 text-[#8c6b5d] mr-3"></i>
+                        <h3 class="text-xl font-semibold text-tierra-900">Amenazas <span class="text-sm font-normal text-tierra-500 ml-2">(Afrontar)</span></h3>
+                    </div>
+                    <ul class="space-y-4 mb-6">
+                        <li class="flex items-start"><span class="text-[#8c6b5d] mr-2">•</span><span class="text-tierra-700 text-sm">Capital disponible limitado.</span></li>
+                        <li class="flex items-start"><span class="text-[#8c6b5d] mr-2">•</span><span class="text-tierra-700 text-sm">Difícil disponibilidad de vivienda en caso de mudanza.</span></li>
+                        <li class="flex items-start"><span class="text-[#8c6b5d] mr-2">•</span><span class="text-tierra-700 text-sm">Falta de formaciones accesibles en la zona.</span></li>
+                    </ul>
+                    <div class="bg-tierra-50 p-4 rounded-xl border border-tierra-100 mt-auto">
+                        <h4 class="text-sm font-semibold text-tierra-800 mb-2 flex items-center"><i data-lucide="shield" class="w-4 h-4 mr-1"></i> Plan de Acción</h4>
+                        <ul class="space-y-2 text-sm text-tierra-600">
+                            <li>- Investigar ayudas, becas y financiación flexible.</li>
+                            <li>- Planificar gastos y priorizar inversiones con retorno.</li>
+                            <li>- Explorar opciones de alojamiento compartido.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Fortalezas / Mantener -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-tierra-100 hover:shadow-md transition-shadow relative overflow-hidden">
+                    <div class="absolute top-0 right-0 w-2 h-full bg-[#5d7a6b]"></div>
+                    <div class="flex items-center mb-6">
+                        <i data-lucide="award" class="w-6 h-6 text-[#5d7a6b] mr-3"></i>
+                        <h3 class="text-xl font-semibold text-tierra-900">Fortalezas <span class="text-sm font-normal text-tierra-500 ml-2">(Mantener)</span></h3>
+                    </div>
+                    <ul class="space-y-4 mb-6">
+                        <li class="flex items-start"><span class="text-[#5d7a6b] mr-2">•</span><span class="text-tierra-700 text-sm">Dedicada, responsable, me exijo cumplir expectativas.</span></li>
+                        <li class="flex items-start"><span class="text-[#5d7a6b] mr-2">•</span><span class="text-tierra-700 text-sm">Aprendo rápido y soy resolutiva.</span></li>
+                        <li class="flex items-start"><span class="text-[#5d7a6b] mr-2">•</span><span class="text-tierra-700 text-sm">Fácil adaptación y ambición académica.</span></li>
+                    </ul>
+                    <div class="bg-tierra-50 p-4 rounded-xl border border-tierra-100">
+                        <h4 class="text-sm font-semibold text-tierra-800 mb-2 flex items-center"><i data-lucide="anchor" class="w-4 h-4 mr-1"></i> Plan de Acción</h4>
+                        <ul class="space-y-2 text-sm text-tierra-600">
+                            <li>- Rutina de autoevaluación para no perder enfoque.</li>
+                            <li>- Seguir formándome e investigar opciones.</li>
+                            <li>- Mantener contacto con tutores de orientación.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Oportunidades / Explotar -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-tierra-100 hover:shadow-md transition-shadow relative overflow-hidden">
+                    <div class="absolute top-0 right-0 w-2 h-full bg-[#6b8c9e]"></div>
+                    <div class="flex items-center mb-6">
+                        <i data-lucide="compass" class="w-6 h-6 text-[#6b8c9e] mr-3"></i>
+                        <h3 class="text-xl font-semibold text-tierra-900">Oportunidades <span class="text-sm font-normal text-tierra-500 ml-2">(Explotar)</span></h3>
+                    </div>
+                    <ul class="space-y-4 mb-6">
+                        <li class="flex items-start"><span class="text-[#6b8c9e] mr-2">•</span><span class="text-tierra-700 text-sm">Becas de estudio para cursos superiores.</span></li>
+                        <li class="flex items-start"><span class="text-[#6b8c9e] mr-2">•</span><span class="text-tierra-700 text-sm">Buen expediente académico para optar a plazas.</span></li>
+                        <li class="flex items-start"><span class="text-[#6b8c9e] mr-2">•</span><span class="text-tierra-700 text-sm">Desplazamiento por vehículo propio.</span></li>
+                    </ul>
+                    <div class="bg-tierra-50 p-4 rounded-xl border border-tierra-100">
+                        <h4 class="text-sm font-semibold text-tierra-800 mb-2 flex items-center"><i data-lucide="rocket" class="w-4 h-4 mr-1"></i> Plan de Acción</h4>
+                        <ul class="space-y-2 text-sm text-tierra-600">
+                            <li>- Atenta a convocatorias de becas.</li>
+                            <li>- Usar expediente para acceder a alta demanda.</li>
+                            <li>- Valorar movilidad hacia otras ciudades y sus costes.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección 3: Resultados de Orientación -->
+    <section id="orientacion" class="py-20 bg-white border-t border-tierra-100 border-b">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row items-center gap-12">
+                <div class="md:w-1/2">
+                    <h2 class="text-3xl font-serif text-tierra-800 mb-6">Tests de Orientación Vocacional</h2>
+                    <p class="text-tierra-700 mb-6 leading-relaxed">
+                        He realizado varios tests y al principio los resultados me desconcertaron. Unos apuntaban a <strong>Ingeniería/Arquitectura</strong> y otros al perfil <strong>Artístico / Realista</strong>.
+                    </p>
+                    <div class="bg-tierra-50 p-6 rounded-xl border border-tierra-200 mb-6">
+                        <h4 class="font-semibold text-tierra-800 mb-3 text-sm uppercase tracking-wider">Mis áreas de mayor interés:</h4>
+                        <div class="space-y-3">
+                            <div>
+                                <div class="flex justify-between text-sm mb-1"><span class="font-medium">Building (Construcción)</span><span>100%</span></div>
+                                <div class="w-full bg-tierra-200 rounded-full h-2"><div class="bg-tierra-600 h-2 rounded-full" style="width: 100%"></div></div>
+                            </div>
+                            <div>
+                                <div class="flex justify-between text-sm mb-1"><span class="font-medium">Thinking (Pensamiento)</span><span>38%</span></div>
+                                <div class="w-full bg-tierra-200 rounded-full h-2"><div class="bg-tierra-500 h-2 rounded-full" style="width: 38%"></div></div>
+                            </div>
+                            <div>
+                                <div class="flex justify-between text-sm mb-1"><span class="font-medium">Creating (Creación)</span><span>37%</span></div>
+                                <div class="w-full bg-tierra-200 rounded-full h-2"><div class="bg-tierra-400 h-2 rounded-full" style="width: 37%"></div></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="md:w-1/2 space-y-6">
+                    <div class="p-6 bg-white border border-tierra-200 rounded-2xl shadow-sm relative">
+                        <i data-lucide="quote" class="absolute top-4 right-4 w-8 h-8 text-tierra-200"></i>
+                        <h4 class="text-lg font-serif text-tierra-900 mb-3">Mi conclusión personal</h4>
+                        <p class="text-tierra-700 italic text-sm leading-relaxed mb-4">
+                            "Al principio parecía que ningún test se acercaba a mi profesión de forma directa. Pero analizando que me atrae el trabajo físico, metódico y la resolución de problemas (Construcción y Pensamiento), combinado con la necesidad de expresión (Creación)..."
+                        </p>
+                        <p class="text-tierra-800 font-medium bg-tierra-100 p-4 rounded-lg text-sm">
+                            Encuentro una relación directa: para mí, la cocina es un trabajo manual, metódico, pero con una inmensa libertad artística. Es un medio de expresión y estética perfecto para mi perfil.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección 4: Gráfico de Valores -->
+    <section id="valores" class="py-20 bg-tierra-50">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-serif text-tierra-800 mb-4">Mis Prioridades Laborales</h2>
+                <div class="w-24 h-1 bg-tierra-300 mx-auto rounded-full mt-6"></div>
+            </div>
+
+            <div class="flex flex-col lg:flex-row items-center gap-12 bg-white p-8 rounded-3xl shadow-sm border border-tierra-100">
+                <!-- Contenedor del Gráfico -->
+                <div class="w-full lg:w-1/2 flex justify-center">
+                    <div class="w-full max-w-md aspect-square relative">
+                        <canvas id="valoresChart"></canvas>
+                    </div>
+                </div>
+
+                <!-- Explicación de los valores -->
+                <div class="w-full lg:w-1/2">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                        
+                        <div class="border-l-4 pl-4 border-[#8B5A2B]">
+                            <h4 class="font-semibold text-tierra-900 text-lg flex items-center justify-between">
+                                Satisfacción <span class="text-sm font-bold text-[#8B5A2B]">26.1%</span>
+                            </h4>
+                            <p class="text-xs text-tierra-600 mt-1">Que al realizar ese trabajo me sienta realizada y conforme. Que sea una actividad que me llene y me genere ganas.</p>
+                        </div>
+
+                        <div class="border-l-4 pl-4 border-[#D2B48C]">
+                            <h4 class="font-semibold text-tierra-900 text-lg flex items-center justify-between">
+                                Salario <span class="text-sm font-bold text-[#D2B48C]">21.7%</span>
+                            </h4>
+                            <p class="text-xs text-tierra-600 mt-1">Es importante, pero valoro el descanso mental. Prefiero ganar un sueldo para vivir bien con mayor tranquilidad mental.</p>
+                        </div>
+
+                        <div class="border-l-4 pl-4 border-[#5C4033]">
+                            <h4 class="font-semibold text-tierra-900 text-lg flex items-center justify-between">
+                                Ambiente de Trabajo <span class="text-sm font-bold text-[#5C4033]">17.4%</span>
+                            </h4>
+                            <p class="text-xs text-tierra-600 mt-1">Sentirme cómoda, con buena comunicación, buenos tratos, motivación y risas.</p>
+                        </div>
+
+                        <div class="border-l-4 pl-4 border-[#CD853F]">
+                            <h4 class="font-semibold text-tierra-900 text-lg flex items-center justify-between">
+                                Flexibilidad Horaria <span class="text-sm font-bold text-[#CD853F]">13.0%</span>
+                            </h4>
+                            <p class="text-xs text-tierra-600 mt-1">Que el horario semifijo pueda variar según conveniencia, fiestas o turnos.</p>
+                        </div>
+
+                        <div class="border-l-4 pl-4 border-[#DEB887]">
+                            <h4 class="font-semibold text-tierra-900 text-lg flex items-center justify-between">
+                                Descanso Mental <span class="text-sm font-bold text-[#DEB887]">13.0%</span>
+                            </h4>
+                            <p class="text-xs text-tierra-600 mt-1">No llevarme el trabajo a casa y separar adecuadamente mi tiempo de descanso.</p>
+                        </div>
+
+                        <div class="border-l-4 pl-4 border-[#E6C2A1]">
+                            <h4 class="font-semibold text-tierra-900 text-lg flex items-center justify-between">
+                                Horario <span class="text-sm font-bold text-[#E6C2A1]">8.7%</span>
+                            </h4>
+                            <p class="text-xs text-tierra-600 mt-1">Un horario compatible. Tiene menos % porque siento que me puedo adaptar bien.</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-tierra-900 text-tierra-200 py-8 border-t border-tierra-800">
+        <div class="max-w-6xl mx-auto px-4 text-center">
+            <span class="font-serif font-bold text-2xl tracking-tight text-white mb-4 block">AMB.</span>
+            <p class="text-sm">Proyecto de clase desarrollado por Andrea Mora Blas (CS DC1 2025-2026).</p>
+            <p class="text-xs mt-2 text-tierra-400">Diseño web creado a partir de documentos de evaluación personal.</p>
+        </div>
+    </footer>
+
+    <!-- Script para inicializar Iconos y Gráfico -->
+    <script>
+        // Inicializar iconos
+        lucide.createIcons();
+
+        // Datos para el gráfico de quesito extraídos del PDF "GRÁFICO DE TRABAJO"
+        document.addEventListener('DOMContentLoaded', function() {
+            const ctx = document.getElementById('valoresChart').getContext('2d');
+            
+            // Paleta de colores terrosos para que encaje con la estética general
+            const coloresTerrosos = [
+                '#8B5A2B', // Satisfacción (Marrón medio)
+                '#D2B48C', // Salario (Canela claro)
+                '#5C4033', // Ambiente (Marrón muy oscuro)
+                '#CD853F', // Flexibilidad (Teja / Naranja suave)
+                '#DEB887', // Descanso (Beige oscuro)
+                '#E6C2A1', // Horario (Arena)
+            ];
+
+            const valoresChart = new Chart(ctx, {
+                type: 'pie',
+                data: {
+                    labels: ['Satisfacción', 'Salario', 'Ambiente de trabajo', 'Flexibilidad horaria', 'Descanso mental', 'Horario'],
+                    datasets: [{
+                        data: [26.1, 21.7, 17.4, 13.0, 13.0, 8.7],
+                        backgroundColor: coloresTerrosos,
+                        borderColor: '#ffffff',
+                        borderWidth: 2,
+                        hoverOffset: 6
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: {
+                            position: 'bottom',
+                            labels: {
+                                padding: 20,
+                                font: {
+                                    family: "'Inter', sans-serif",
+                                    size: 13
+                                },
+                                color: '#5c4135' // text-tierra-900
+                            }
+                        },
+                        tooltip: {
+                            backgroundColor: '#fff',
+                            titleColor: '#5c4135',
+                            bodyColor: '#5c4135',
+                            borderColor: '#e8dcd0',
+                            borderWidth: 1,
+                            padding: 12,
+                            boxPadding: 6,
+                            callbacks: {
+                                label: function(context) {
+                                    let label = context.label || '';
+                                    if (label) {
+                                        label += ': ';
+                                    }
+                                    if (context.parsed !== null) {
+                                        label += context.parsed + '%';
+                                    }
+                                    return label;
+                                }
+                            }
+                        }
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+</html>
