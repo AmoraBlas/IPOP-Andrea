@@ -59,14 +59,13 @@
                 <div class="flex-shrink-0 flex items-center">
                     <span class="font-serif font-bold text-xl tracking-tight text-tierra-800">IPOP Andrea Mora Blas</span>
                 </div>
-                <div class="hidden lg:flex space-x-6">
+                <div class="hidden lg:flex space-x-6 items-center">
                     <a href="#inici" class="text-tierra-600 hover:text-tierra-900 transition-colors text-sm font-medium">Inici</a>
-                    <a href="#trajectoria" class="text-tierra-600 hover:text-tierra-900 transition-colors text-sm font-medium">Trajectòria</a>
                     <a href="#dafo" class="text-tierra-600 hover:text-tierra-900 transition-colors text-sm font-medium">DAFO/CAME</a>
-                    <a href="#orientacio" class="text-tierra-600 hover:text-tierra-900 transition-colors text-sm font-medium">Tests</a>
                     <a href="#valors" class="text-tierra-600 hover:text-tierra-900 transition-colors text-sm font-medium">Valors</a>
                     <a href="#entorn" class="text-tierra-600 hover:text-tierra-900 transition-colors text-sm font-medium">Entorn</a>
-                    <a href="#reflexio" class="text-tierra-600 hover:text-tierra-900 transition-colors text-sm font-medium">Reflexió</a>
+                    <span class="text-tierra-300">|</span>
+                    <a href="#segona-part" class="text-tierra-800 font-bold hover:text-tierra-600 transition-colors text-sm bg-tierra-100 px-3 py-1 rounded-full">Segona Part: On Vull Anar</a>
                 </div>
                 <!-- Menú mòbil -->
                 <div class="lg:hidden flex items-center">
@@ -82,10 +81,8 @@
                 <a href="#inici" class="block px-3 py-2 text-base font-medium text-tierra-700 hover:text-tierra-900 hover:bg-tierra-50">Inici</a>
                 <a href="#trajectoria" class="block px-3 py-2 text-base font-medium text-tierra-700 hover:text-tierra-900 hover:bg-tierra-50">Trajectòria</a>
                 <a href="#dafo" class="block px-3 py-2 text-base font-medium text-tierra-700 hover:text-tierra-900 hover:bg-tierra-50">DAFO / CAME</a>
-                <a href="#orientacio" class="block px-3 py-2 text-base font-medium text-tierra-700 hover:text-tierra-900 hover:bg-tierra-50">Tests d'Orientació</a>
                 <a href="#valors" class="block px-3 py-2 text-base font-medium text-tierra-700 hover:text-tierra-900 hover:bg-tierra-50">Gràfic de Valors</a>
-                <a href="#entorn" class="block px-3 py-2 text-base font-medium text-tierra-700 hover:text-tierra-900 hover:bg-tierra-50">Com em veuen els altres?</a>
-                <a href="#reflexio" class="block px-3 py-2 text-base font-medium text-tierra-700 hover:text-tierra-900 hover:bg-tierra-50">Reflexió ON ESTIC</a>
+                <a href="#segona-part" class="block px-3 py-2 text-base font-bold text-tierra-900 bg-tierra-100 mt-2 rounded-md">Segona Part: ON VULL ANAR</a>
             </div>
         </div>
     </nav>
@@ -112,11 +109,25 @@
             </div>
             <div class="md:w-1/2 relative">
                 <div class="aspect-square bg-tierra-200 rounded-2xl overflow-hidden relative shadow-lg">
-                    <div class="absolute inset-0 bg-gradient-to-tr from-tierra-300 to-tierra-100 opacity-80"></div>
-                    <div class="absolute inset-0 flex items-center justify-center text-tierra-500">
-                        <i data-lucide="pen-tool" class="w-32 h-32 opacity-20"></i>
+                    <div class="absolute inset-0 bg-gradient-to-tr from-tierra-300 via-tierra-100 to-tierra-200"></div>
+                    
+                    <!-- Composició d'icones Art + Cuina -->
+                    <div class="absolute inset-0 flex items-center justify-center">
+                        <div class="relative w-[280px] h-[280px] sm:w-[420px] sm:h-[420px] flex items-center justify-center">
+                            <!-- Icona Art -->
+                            <div class="absolute top-0 left-0 p-6 sm:p-12 bg-white/70 rounded-full backdrop-blur-md shadow-2xl transform -rotate-6 transition-transform hover:rotate-0 duration-300 z-10">
+                                <i data-lucide="palette" class="w-32 h-32 sm:w-44 sm:h-44 text-tierra-600"></i>
+                            </div>
+                            <!-- Icona Cuina -->
+                            <div class="absolute bottom-0 right-0 p-6 sm:p-12 bg-white/70 rounded-full backdrop-blur-md shadow-2xl transform rotate-6 transition-transform hover:rotate-0 duration-300 z-20">
+                                <i data-lucide="chef-hat" class="w-32 h-32 sm:w-44 sm:h-44 text-tierra-900"></i>
+                            </div>
+                            <!-- Element connector visual (línia discontínua d'unió) -->
+                            <div class="absolute inset-0 flex items-center justify-center -z-0">
+                                <div class="w-64 h-64 sm:w-96 sm:h-96 border-4 sm:border-8 border-dashed border-tierra-500/20 rounded-full"></div>
+                            </div>
+                        </div>
                     </div>
-                    <img src="https://images.unsplash.com/photo-1556910103-1c02745aae4d?auto=format&fit=crop&q=80" alt="Cuina creativa" class="absolute inset-0 w-full h-full object-cover mix-blend-overlay opacity-50">
                 </div>
                 <div class="absolute -bottom-6 -left-6 w-24 h-24 bg-acento-100 rounded-full -z-10"></div>
                 <div class="absolute -top-6 -right-6 w-32 h-32 bg-tierra-100 rounded-full -z-10"></div>
@@ -124,10 +135,12 @@
         </div>
     </section>
 
-    <!-- Secció 1: Trajectòria -->
+    <!-- PART 1: ON ESTIC (Tota la secció original) -->
+
     <section id="trajectoria" class="py-20 bg-white">
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="mb-12">
+                <span class="text-sm font-bold text-tierra-500 tracking-wider uppercase mb-2 block">PRIMERA PART: ON ESTIC</span>
                 <h2 class="text-3xl font-serif text-tierra-800 mb-4">Pregunta 1: Evolució Professional</h2>
                 <div class="w-24 h-1 bg-tierra-300 rounded-full"></div>
             </div>
@@ -256,7 +269,6 @@
             </div>
 
             <div class="space-y-10">
-                
                 <div>
                     <div class="text-tierra-800 leading-relaxed bg-tierra-50 p-6 md:p-8 rounded-2xl border border-tierra-100 space-y-5 shadow-sm">
                         <p>Hi ha moltes maneres de poder detectar la idea de "cap on vull anar". A banda de fer un treball introspectiu amb nosaltres mateixos, podem buscar per internet sortides professionals, sous, preguntar a la gent del nostre voltant... i també fer un test vocacional.</p>
@@ -314,59 +326,49 @@
             </div>
 
             <div class="flex flex-col lg:flex-row items-center gap-12 bg-white p-8 rounded-3xl shadow-sm border border-tierra-100">
-                <!-- Contenidor del Gràfic -->
                 <div class="w-full lg:w-1/2 flex justify-center">
                     <div class="w-full max-w-md aspect-square relative">
                         <canvas id="valoresChart"></canvas>
                     </div>
                 </div>
-
-                <!-- Explicació dels valors -->
                 <div class="w-full lg:w-1/2">
                     <div class="grid grid-cols-1 gap-6">
-                        
                         <div>
                             <h4 class="font-bold text-tierra-900 text-lg uppercase flex items-center justify-between border-b border-tierra-200 pb-2 mb-2">
                                 SATISFACCIÓ <span class="text-xl font-black text-[#8B5A2B]">26.1%</span>
                             </h4>
                             <p class="text-tierra-700">Que en realitzar aquesta feina em senti realitzada i conforme amb el que faig, que sigui una activitat que m'ompli i em generi ganes.</p>
                         </div>
-
                         <div>
                             <h4 class="font-bold text-tierra-900 text-lg uppercase flex items-center justify-between border-b border-tierra-200 pb-2 mb-2">
                                 SOU <span class="text-xl font-black text-[#D2B48C]">21.7%</span>
                             </h4>
                             <p class="text-tierra-700">Els diners per a mi són importants però no ho són tot, valoro altres coses com el descans mental i la satisfacció abans que el volum salarial. Amb poder guanyar un sou que em permeti viure bé prefereixo guanyar menys però amb major tranquil·litat mental.</p>
                         </div>
-
                         <div>
                             <h4 class="font-bold text-tierra-900 text-lg uppercase flex items-center justify-between border-b border-tierra-200 pb-2 mb-2">
                                 AMBIENT LABORAL <span class="text-xl font-black text-[#5C4033]">17.4%</span>
                             </h4>
                             <p class="text-tierra-700">Sentir-me còmoda al lloc de treball, on hi hagi comunicació, bons tractes, motivació i riures.</p>
                         </div>
-
                         <div>
                             <h4 class="font-bold text-tierra-900 text-lg uppercase flex items-center justify-between border-b border-tierra-200 pb-2 mb-2">
                                 FLEXIBILITAT HORÀRIA <span class="text-xl font-black text-[#CD853F]">13%</span>
                             </h4>
                             <p class="text-tierra-700">Que tot i tenint un horari "semifix" aquest pugui variar segons conveniència, festes variables, elecció de torns.</p>
                         </div>
-
                         <div>
                             <h4 class="font-bold text-tierra-900 text-lg uppercase flex items-center justify-between border-b border-tierra-200 pb-2 mb-2">
                                 DESCANS MENTAL <span class="text-xl font-black text-[#DEB887]">13%</span>
                             </h4>
                             <p class="text-tierra-700">Poder no emportar-me la feina a casa. Separar el descans de la feina.</p>
                         </div>
-
                         <div>
                             <h4 class="font-bold text-tierra-900 text-lg uppercase flex items-center justify-between border-b border-tierra-200 pb-2 mb-2">
                                 HORARI <span class="text-xl font-black text-[#E6C2A1]">8.7%</span>
                             </h4>
                             <p class="text-tierra-700">Un horari que sigui compatible amb mi, no és molt % perquè sento que em puc adaptar a diferents horaris.</p>
                         </div>
-
                     </div>
                 </div>
             </div>
@@ -431,8 +433,6 @@
                     </tbody>
                 </table>
             </div>
-
-            <!-- Caixa d'Opinió -->
             <div class="mt-8 bg-tierra-100 p-6 rounded-2xl border-l-4 border-tierra-600">
                 <h4 class="font-bold text-tierra-900 text-lg mb-2">Opinió:</h4>
                 <p class="text-tierra-800 leading-relaxed">
@@ -451,18 +451,532 @@
             </div>
 
             <div class="bg-white p-8 rounded-2xl shadow-sm border border-tierra-200 space-y-6 text-tierra-800 leading-relaxed">
-                <p>
-                    Descobert com a tal no sabria dir que he pogut descobrir, a l'hora de realitzar el DAFO personal sí que és veritat que m'ha fet reflexionar sobre mi mateixa i donar-li voltes sobre quines qualitats o característiques tinc. El fet d'haver de pensar a quines "amenaces" m'he d'enfrontar o les debilitats que tinc en les que he de treballar. Sempre he pensat que era molt difícil definir-me, les persones en general, tenim tothom molts matisos i som persones canviants. Tot i així característiques com la por que tinc al canvi i a prendre grans decisions o de no estar a l'altura, al fracàs m'ha resultat interessant i revelador. Mitjançant els tests també he de dir que he pogut experimentar amb més claredat quins tipus de treball o accions em criden més l'atenció, com per exemple l'interès en els treballs que són més manuals i mecànics amb accions o relacions artístiques o per adonar-me'n de si el meu caràcter es decanta més per un tipus de personalitat o un altre.
+                <p>Descobert com a tal no sabria dir que he pogut descobrir, a l'hora de realitzar el DAFO personal sí que és veritat que m'ha fet reflexionar sobre mi mateixa i donar-li voltes sobre quines qualitats o característiques tinc. El fet d'haver de pensar a quines "amenaces" m'he d'enfrontar o les debilitats que tinc en les que he de treballar. Sempre he pensat que era molt difícil definir-me, les persones en general, tenim tothom molts matisos i som persones canviants. Tot i així característiques com la por que tinc al canvi i a prendre grans decisions o de no estar a l'altura, al fracàs m'ha resultat interessant i revelador. Mitjançant els tests també he de dir que he pogut experimentar amb més claredat quins tipus de treball o accions em criden més l'atenció, com per exemple l'interès en els treballs que són més manuals i mecànics amb accions o relacions artístiques o per adonar-me'n de si el meu caràcter es decanta més per un tipus de personalitat o un altre.</p>
+                <p>Considero que puc destacar en certes qualitats com poden ser una dedicació i responsabilitat en allò que em proposo o involucra a una altra persona, sobretot a un superior, una alta exigència en mi mateixa i en el meu rendiment, bona puntualitat, educació, facilitats acadèmiques i dedicació en els estudis així com certa habilitat i interès en l'ofici en el qual exerceixo.</p>
+                <p>A causa d'aquesta sèrie d'exercicis m'he plantejat una mica més el valor de certs punts a tenir en compte d'un treball, en el meu cas encara que m'agrada molt l'ofici i la dinàmica que hi ha a la cuina, la pràctica, la teòrica, el món en general, sobre tot ambientat en una branca més artística i innovadora. Tot i això considero que em resta bastant la baixa compatibilitat horària amb altres sectors. El fet que quan jo treballo les altres persones tenen festa i viceversa no m'entusiasma gaire, al principi em donava més igual, les hores de més, els horaris partits. Però això a la llarga i pensant-ho més com a ofici de futur amb el qual he de compaginar juntament amb una parella i el fet de voler tenir temps lliure que poder compartir, cosa que per mi és molt important, xoca molt.</p>
+                <p>Em pot ajudar a buscar o centrar-me a analitzar com soc, com treballar allò més negatiu sobre mi i en buscar un fil conductor per veure quines altres opcions hi ha o les condicions dintre del sector, analitzar com és de compatible el treball de cuiner amb per exemple el meu "quesito" de treball. Buscar com és d'usual trobar un treball com l'AQ amb caps de setmana lliures, o la freqüència d'horaris partits, el sou, les característiques i la disponibilitat de treballs amb una cuina més artística/moderna/d'autor, etc.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================================================= -->
+    <!-- SEGONA PART: ON VULL ANAR -->
+    <!-- ========================================================================= -->
+
+    <!-- Separador visual gran -->
+    <section id="segona-part" class="bg-tierra-800 text-white py-16">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-4xl md:text-5xl font-serif mb-4">Segona Part: ON VULL ANAR</h2>
+            <div class="w-32 h-1 bg-tierra-400 mx-auto rounded-full"></div>
+            <p class="mt-6 text-tierra-200 text-lg">El meu camí de futur: formació, promoció i visió a llarg termini.</p>
+        </div>
+    </section>
+
+    <!-- Conec el meu cicle -->
+    <section class="py-20 bg-tierra-50 border-t border-b border-tierra-200">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="mb-12">
+                <h2 class="text-3xl font-serif text-tierra-800 mb-4">1.- Conec el meu cicle?</h2>
+                <div class="w-24 h-1 bg-tierra-300 rounded-full mb-6"></div>
+                <a href="https://xtec.gencat.cat/web/.content/alfresco/d/d/workspace/Spaces Store/0008/267905c6-e31f-4fc2-8d4b-90902776c868/DOGC TS direccio cuina.pdf" target="_blank" class="text-sm text-tierra-600 hover:text-tierra-900 underline flex items-center"><i data-lucide="link" class="w-4 h-4 mr-1"></i> Veure el currículum dels meus estudis (DOGC TS Direcció Cuina)</a>
+            </div>
+
+            <div class="bg-white p-8 rounded-2xl shadow-sm border border-tierra-100 mb-8">
+                <h3 class="text-xl font-bold text-tierra-900 mb-4">2- Indica la competència general del cicle</h3>
+                <p class="text-tierra-700 leading-relaxed bg-tierra-50 p-5 rounded-xl border-l-4 border-tierra-500">
+                    La competència general d'aquest títol consisteix a dirigir i organitzar la producció i el servei a la cuina, determinar ofertes i recursos, controlar les activitats pròpies de l'aprovisionament, la producció i el servei, complir els objectius econòmics, seguir els protocols de qualitat establerts i actuar segons les normes d'higiene, de prevenció de riscos laborals i de protecció ambiental.
                 </p>
-                <p>
-                    Considero que puc destacar en certes qualitats com poden ser una dedicació i responsabilitat en allò que em proposo o involucra a una altra persona, sobretot a un superior, una alta exigència en mi mateixa i en el meu rendiment, bona puntualitat, educació, facilitats acadèmiques i dedicació en els estudis així com certa habilitat i interès en l'ofici en el qual exerceixo.
-                </p>
-                <p>
-                    A causa d'aquesta sèrie d'exercicis m'he plantejat una mica més el valor de certs punts a tenir en compte d'un treball, en el meu cas encara que m'agrada molt l'ofici i la dinàmica que hi ha a la cuina, la pràctica, la teòrica, el món en general, sobre tot ambientat en una branca més artística i innovadora. Tot i això considero que em resta bastant la baixa compatibilitat horària amb altres sectors. El fet que quan jo treballo les altres persones tenen festa i viceversa no m'entusiasma gaire, al principi em donava més igual, les hores de més, els horaris partits. Però això a la llarga i pensant-ho més com a ofici de futur amb el qual he de compaginar juntament amb una parella i el fet de voler tenir temps lliure que poder compartir, cosa que per mi és molt important, xoca molt.
-                </p>
-                <p>
-                    Em pot ajudar a buscar o centrar-me a analitzar com soc, com treballar allò més negatiu sobre mi i en buscar un fil conductor per veure quines altres opcions hi ha o les condicions dintre del sector, analitzar com és de compatible el treball de cuiner amb per exemple el meu "quesito" de treball. Buscar com és d'usual trobar un treball com l'AQ amb caps de setmana lliures, o la freqüència d'horaris partits, el sou, les característiques i la disponibilitat de treballs amb una cuina més artística/moderna/d'autor, etc.
-                </p>
+            </div>
+
+            <div class="bg-white p-8 rounded-2xl shadow-sm border border-tierra-100 mb-8">
+                <h3 class="text-xl font-bold text-tierra-900 mb-6">3- Indica les competències professionals, personals i socials</h3>
+                <div class="columns-1 md:columns-2 gap-8 text-sm text-tierra-700 space-y-4">
+                    <p>a) Definir els productes que ofereix l'empresa tenint en compte els paràmetres del projecte estratègic.</p>
+                    <p>b) Dissenyar els processos de producció i determinar l'estructura organitzativa i els recursos necessaris, tenint en compte els objectius de l'empresa.</p>
+                    <p>c) Determinar l'oferta de productes culinaris, tenint en compte totes les seves variables, per fixar preus i estandarditzar processos.</p>
+                    <p>d) Programar activitats i organitzar recursos, tenint en compte les necessitats de producció.</p>
+                    <p>e) Realitzar l'aprovisionament, l'emmagatzematge i la distribució de matèries primeres, en condicions idònies, controlant-ne la qualitat i la documentació relacionada.</p>
+                    <p>f) Controlar la posada a punt d'espais, de maquinària, d'estris i eines.</p>
+                    <p>g) Verificar els processos de preelaboració i/o regeneració que cal aplicar a les diverses matèries primeres per utilitzar-les posteriorment.</p>
+                    <p>h) Organitzar la realització de les elaboracions culinàries, tenint en compte l'estandardització dels processos, per a la decoració/acabat o conservació posteriors.</p>
+                    <p>i) Supervisar la decoració/acabat de les elaboracions segons les necessitats i els protocols establerts, per a la conservació o servei posteriors.</p>
+                    <p>j) Verificar els processos d'envasament i/o conservació dels gèneres i elaboracions culinaris, aplicant-hi els mètodes apropiats i utilitzant els equips idonis, per preservar-ne la qualitat i evitar riscos alimentaris.</p>
+                    <p>k) Controlar el desenvolupament dels serveis a la cuina, coordinant-ne la prestació, tenint en compte l'àmbit d'execució i els protocols establerts.</p>
+                    <p>l) Emplenar la documentació administrativa, relacionada amb les unitats de producció a la cuina, per realitzar controls pressupostaris, informes o qualsevol activitat que pugui derivar-se'n, utilitzant les tecnologies de la informació i la comunicació.</p>
+                    <p>m) Donar resposta a possibles sol·licituds, a suggeriments i a reclamacions dels clients, per complir-ne les expectatives i aconseguir-ne la satisfacció.</p>
+                    <p>n) Adaptar-se a les noves situacions laborals, mantenir actualitzats els coneixements científics, tècnics i tecnològics relatius al seu entorn professional, gestionant la seva formació i els recursos existents en l'aprenentatge al llarg de la vida, i utilitzant les tecnologies de la informació i la comunicació.</p>
+                    <p>o) Resoldre situacions, problemes o contingències amb iniciativa i autonomia en l'àmbit de la seva competència; amb creativitat, innovació i esperit de millora en el treball personal i en el dels membres de l'equip.</p>
+                    <p>p) Organitzar i coordinar equips de treball, supervisant-ne el desenvolupament, amb responsabilitat, mantenint-hi relacions fluides, assumint-ne el lideratge i aportant solucions als conflictes grupals que s'hi presentin.</p>
+                    <p>q) Comunicar-se amb els seus iguals, superiors jeràrquics, clients i persones sota la seva responsabilitat, utilitzant vies eficaces de comunicació, transmetent la informació o els coneixements adequats, i respectant l'autonomia i la competència de les persones que intervenen en l'àmbit del seu treball.</p>
+                    <p>r) Generar entorns segurs en el desenvolupament del seu treball i el del seu equip, supervisant i aplicant els procediments de prevenció de riscos laborals i ambientals d'acord amb la normativa i els objectius de l'empresa.</p>
+                    <p>s) Supervisar i aplicar procediments de gestió de qualitat, d'accessibilitat universal i de disseny per a tots, en les activitats professionals incloses en els processos de producció o prestació de serveis.</p>
+                    <p>t) Realitzar la gestió bàsica per a la creació i el funcionament d'una petita empresa, i tenir iniciativa en la seva activitat professional amb sentit de la responsabilitat social.</p>
+                    <p>u) Exercir els seus drets i complir amb les obligacions derivades de la seva activitat professional, d'acord amb la legislació vigent, participant activament en la vida econòmica, social i cultural.</p>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-tierra-100">
+                    <h3 class="text-xl font-bold text-tierra-900 mb-4">3- Indica les capacitats claus</h3>
+                    <p class="text-tierra-700">Són les capacitats transversals que afecten diferents llocs de treball i que són transferibles a noves situacions de treball. Entre aquestes capacitats destaquen les d'autonomia, innovació, organització del treball, responsabilitat, relació interpersonal, treball en equip i resolució de problemes.</p>
+                </div>
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-tierra-100">
+                    <h3 class="text-xl font-bold text-tierra-900 mb-4">4- Principals ocupacions i llocs de treball</h3>
+                    <ul class="text-tierra-700 space-y-2 text-sm">
+                        <li>a) Director o directora d'aliments i begudes.</li>
+                        <li>b) Director o directora de cuina.</li>
+                        <li>c) Cap de producció a la cuina.</li>
+                        <li>d) Cap de cuina.</li>
+                        <li>e) Segon o segona cap de cuina.</li>
+                        <li>f) Cap de serveis d'àpats (catering).</li>
+                        <li>g) Cap de partida.</li>
+                        <li>h) Encarregat o encarregada d'economat i bodega.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Promoció interna i cicles del voltant -->
+    <section class="py-20 bg-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="mb-12">
+                <h2 class="text-3xl font-serif text-tierra-800 mb-4">2.- Promoció interna</h2>
+                <div class="w-24 h-1 bg-tierra-300 rounded-full"></div>
+            </div>
+
+            <h3 class="text-xl font-bold text-tierra-900 mb-4">1.- Coneixes els cicles del teu voltant?</h3>
+            <p class="text-tierra-800 mb-6 italic">Nomena quins cicles formatius s'imparteixen en el teu centre i de quina familia professional són. Ara, escull un d'ells, el que més et pugui cridar l'atenció, busca el seu curriculum i descriu la seva competència general i les seves sortides professionals. Perquè podria arribar a resultar interessant per tu?</p>
+
+            <div class="flex flex-wrap gap-2 mb-8">
+                <span class="bg-tierra-100 text-tierra-800 text-xs px-3 py-1 rounded-full border border-tierra-200">CFGM Cuina Gastronomia i Serveis de Restauració</span>
+                <span class="bg-tierra-600 text-white text-xs px-3 py-1 rounded-full border border-tierra-700 font-bold">CFGM Forneria, Pastisseria i Confiteria</span>
+                <span class="bg-tierra-100 text-tierra-800 text-xs px-3 py-1 rounded-full border border-tierra-200">CFGS Direcció de Cuina</span>
+                <span class="bg-tierra-100 text-tierra-800 text-xs px-3 py-1 rounded-full border border-tierra-200">CFGS Gestió d'Allotjaments Turístics</span>
+                <span class="bg-tierra-100 text-tierra-800 text-xs px-3 py-1 rounded-full border border-tierra-200">CFGS Agència de Viatges i Gestió d'Esdeveniments</span>
+                <span class="bg-tierra-100 text-tierra-800 text-xs px-3 py-1 rounded-full border border-tierra-200">CFGS Guia, Informació i Assistències Turístiques</span>
+                <span class="bg-tierra-100 text-tierra-800 text-xs px-3 py-1 rounded-full border border-tierra-200">CFGS Processos i Qualitat en Indústries Alimentàries</span>
+                <span class="bg-tierra-100 text-tierra-800 text-xs px-3 py-1 rounded-full border border-tierra-200">CFGS Direcció en Serveis de Restauració</span>
+            </div>
+
+            <div class="bg-tierra-50 p-8 rounded-2xl border border-tierra-100 mb-8">
+                <p class="text-tierra-800 mb-6">M'interessa el <strong>CFGM Forneria, Pastisseria i Confiteria</strong> ja que la pastisseria em sembla molt interessant i bonica i les propostes d'aprenentatge que proporciona el Cicle em semblen bastant artístiques, cosa que m'agrada.</p>
+                
+                <ul class="list-disc pl-5 space-y-2 text-tierra-700 text-sm mb-6">
+                    <li><strong>Pastís + packaging:</strong> disseny d'un pastís innovador i del packaging, explicant al client com degustar-lo i gaudir-lo.</li>
+                    <li><strong>Torró:</strong> creació de torrons a partir de les bases apreses prèviament.</li>
+                    <li><strong>Figures artístiques:</strong>
+                        <ul class="list-none pl-4 mt-2 space-y-1">
+                            <li>✓ <strong>Xocolata:</strong> treball en grup on es realitza una gura de temàtica lliure en 3D, utilitzant destreses pastisseres i arquitectòniques.</li>
+                            <li>✓ <strong>Sucre:</strong> treballant-lo, transformant-lo en caramel i donant-li forma abstracta.</li>
+                            <li>✓ <strong>Pastillatge:</strong> per a presentacions elegants, clàssiques i modernes.</li>
+                            <li>✓ <strong>Pastissos de fondant i de galetes decorades:</strong> últimes tendències en pastisseria nacional i internacional.</li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <p class="text-tierra-800 mb-4">En relació a les sortides de treball també em semblen interessants, artístics i amb un horari que em sembla també força atractiu.</p>
+                <div class="columns-1 sm:columns-2 gap-4 text-sm text-tierra-700">
+                    <p>✓ Personal forner.</p>
+                    <p>✓ Personal elaborador de brioxeria.</p>
+                    <p>✓ Personal elaborador de masses i bases de pizza.</p>
+                    <p>✓ Personal pastisser.</p>
+                    <p>✓ Personal elaborador i decorador de pastissos.</p>
+                    <p>✓ Personal confiter.</p>
+                    <p>✓ Personal reboster.</p>
+                    <p>✓ Torronaires.</p>
+                    <p>✓ Personal elaborador de caramels i dolços.</p>
+                    <p>✓ Personal elaborador de productes de cacau i xocolata.</p>
+                    <p>✓ Personal xurrer.</p>
+                    <p>✓ Personal elaborador de galetes.</p>
+                    <p>✓ Personal elaborador de postres en la restauració.</p>
+                </div>
+            </div>
+
+            <h3 class="text-xl font-bold text-tierra-900 mb-4 mt-12">2.- Borsa de treball del cole</h3>
+            <p class="text-tierra-800 mb-4">Borsa de treball a l' institut... Aquesta activitat consisteix en inscriure't a la borsa de treball del centre. Només has d' enviar una captura de pantalla. En el cas que estiguis inscrit, envia també una captura de pantalla. Recorda: Us heu d' inscriure amb el vostre correu (no el corporatiu) perquè una vegada ja no estigueu al centre poguéssiu rebre les ofertes laborals.</p>
+            <div class="bg-tierra-100 p-6 rounded-xl text-center border border-tierra-200 text-tierra-600 italic text-sm">
+                La borsa de treball es contingut exclusiu per a alumnes i exalumnes del Institut Escola d'Hoteleria i Turisme de Cambrils. Per a poder visualitzar les ofertes de treball s'ha de registrar.<br><br>
+                Formulari de registre<br>
+                Gràcies per registrar-se. Activarem el compte el més aviat possible després d'haver revisat les dades que ens ha proporcionat.
+            </div>
+        </div>
+    </section>
+
+    <!-- Canal Universitats i Preus -->
+    <section class="py-20 bg-tierra-50 border-t border-tierra-200">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                
+                <!-- 3.- Canal Universitats -->
+                <div>
+                    <h2 class="text-3xl font-serif text-tierra-800 mb-4">3.- Canal universitats</h2>
+                    <div class="w-24 h-1 bg-tierra-300 rounded-full mb-8"></div>
+                    <p class="text-tierra-800 italic text-sm mb-6">Has pensat mai en fer una carrera? Saps buscar quantes carreres exiteixen a Catalunya i on es cursen? Accedeix al cercador d'estudis universitaris del CANAL UNIVERSITATS de Gencat i remena. Escull una carrera [...] i em diguis la seva nota de tall i les sortides professionals.</p>
+                    
+                    <div class="space-y-6">
+                        <div class="bg-white p-6 rounded-2xl shadow-sm border border-tierra-200">
+                            <h3 class="text-xl font-bold text-tierra-900 mb-2 border-b border-tierra-100 pb-2">Belles Arts</h3>
+                            <div class="flex flex-wrap gap-2 mb-4 text-xs">
+                                <span class="bg-tierra-100 text-tierra-700 px-2 py-1 rounded">240 ECTS Preu públic</span>
+                                <span class="bg-tierra-100 text-tierra-700 px-2 py-1 rounded">Modalitat presencial | Temps complet i parcial</span>
+                                <span class="bg-tierra-100 text-tierra-700 px-2 py-1 rounded">UB | Barcelona</span>
+                                <span class="bg-tierra-100 text-tierra-700 px-2 py-1 rounded">300 Places</span>
+                            </div>
+                            <p class="text-sm font-bold text-tierra-800 mb-4">Nota de tall 1a assignació PAU/CFGS 2025: <span class="text-lg text-[#8B5A2B]">8,522</span></p>
+                            <h4 class="font-bold text-tierra-900 text-sm mb-2">Sortides professionals</h4>
+                            <ul class="text-xs text-tierra-700 space-y-1 list-disc pl-4">
+                                <li>Creació en l'àmbit audiovisual i de les noves tecnologies.</li>
+                                <li>Creació en branques d'activitat econòmica vinculades a les indústries culturals.</li>
+                                <li>Gestió museística, cultural i del patrimoni artístic.</li>
+                                <li>Assessorament en cultura visual i art.</li>
+                                <li>Consultoria en matèria artística i docent pel que fa a tallers, educació reglada, departaments pedagògics i de recerca de museus, i qualsevol altra oferta formativa vinculada a l'art.</li>
+                                <li>Docència i educació artística.</li>
+                                <li>Altres professions vinculades a l'art.</li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-white p-6 rounded-2xl shadow-sm border border-tierra-200">
+                            <h3 class="text-xl font-bold text-tierra-900 mb-2 border-b border-tierra-100 pb-2">Ciencias Culinarias y Gastronómicas "CETT"</h3>
+                            <div class="flex flex-wrap gap-2 mb-4 text-xs">
+                                <span class="bg-tierra-100 text-tierra-700 px-2 py-1 rounded">240 ECTS Precio privado</span>
+                                <span class="bg-tierra-100 text-tierra-700 px-2 py-1 rounded">Presencial | Tiempo Completo y Parcial</span>
+                                <span class="bg-tierra-100 text-tierra-700 px-2 py-1 rounded">UB Barcelona</span>
+                                <span class="bg-tierra-100 text-tierra-700 px-2 py-1 rounded">80 Plazas</span>
+                            </div>
+                            <p class="text-sm font-bold text-tierra-800 mb-4">Nota de corte 1a. asignación PAU/CFGS 2025: <span class="text-lg text-[#8B5A2B]">5,000</span></p>
+                            <h4 class="font-bold text-tierra-900 text-sm mb-2">Salidas profesionales</h4>
+                            <ul class="text-xs text-tierra-700 space-y-1 list-disc pl-4">
+                                <li>Director/a de producción culinaria y gastronómica</li>
+                                <li>Gestor/a de operaciones y procesos de producción alimentaria</li>
+                                <li>Director/a de desarrollo de nuevos productos alimentarios</li>
+                                <li>Director/a ejecutivo/a de cocina</li>
+                                <li>Director/a de restauración</li>
+                                <li>Director/a culinario/a en industria alimentaria</li>
+                                <li>Consultor/a y asesor/a culinario/a gastronómico/a</li>
+                                <li>Director/a de innovaciones culinarias</li>
+                                <li>Responsable de calidad y seguridad alimentaria en restauración</li>
+                                <li>Responsable de proyectos de investigación</li>
+                                <li>Chef de cocina de restauración comercial</li>
+                                <li>Chef de cocina de restauración colectiva</li>
+                                <li>Director/a de F&B</li>
+                                <li>Director/a de proyectos de instalaciones culinarias</li>
+                                <li>Director/a de acontecimientos y actividades gastronómicos</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 4.- Preus -->
+                <div>
+                    <h2 class="text-3xl font-serif text-tierra-800 mb-4">4.- Estudiar... és per totes les butxaques?</h2>
+                    <div class="w-24 h-1 bg-tierra-300 rounded-full mb-8"></div>
+                    <p class="text-tierra-800 italic text-sm mb-6">Busca per internet i diga'm quin és el preu aproximat d'estudiar un cicle mitjà, un cicle superior, una carrera (grau), un màster...</p>
+                    
+                    <div class="space-y-6">
+                        <div class="bg-white p-5 rounded-xl border-l-4 border-tierra-400 shadow-sm">
+                            <h3 class="font-bold text-tierra-900 mb-2">Cicle Formatiu de Grau Mitjà (CFGM)</h3>
+                            <p class="text-sm text-tierra-700"><strong>Públic:</strong> La matrícula als centres públics dependents de la Generalitat és gratuïta. L'únic cost que hauràs d'assumir és una quota de material o de serveis informàtics que decideix cada institut, normalment entre 50 € i 100 € a l'any (incloent-hi l'assegurança escolar).</p>
+                            <p class="text-sm text-tierra-700 mt-2"><strong>Privat/Concertat:</strong> Depenent del centre i de la complexitat dels materials (un cicle administratiu no costa el mateix que un d'imatge i so), sol oscil·lar entre 1.500 € i 3.500 € a l'any.</p>
+                        </div>
+
+                        <div class="bg-white p-5 rounded-xl border-l-4 border-tierra-500 shadow-sm">
+                            <h3 class="font-bold text-tierra-900 mb-2">Cicle Formatiu de Grau Superior (CFGS)</h3>
+                            <p class="text-sm text-tierra-700"><strong>Públic:</strong> Estudiar un CFGS en un centre públic de la Generalitat té un preu fixat per decret de 360 € per curs acadèmic. A aquest import només cal sumar-hi la mateixa quota de material del centre (entre 50 € i 100 €). Si tens beca o ets família nombrosa, l'import dels 360 € es pot bonificar parcialment o totalment.</p>
+                            <p class="text-sm text-tierra-700 mt-2"><strong>Privat/Concertat:</strong> Els preus pugen més en aquest nivell i acostumen a anar dels 2.000 € als 4.500 € per any.</p>
+                        </div>
+
+                        <div class="bg-white p-5 rounded-xl border-l-4 border-tierra-600 shadow-sm">
+                            <h3 class="font-bold text-tierra-900 mb-2">Carrera Universitària (Grau)</h3>
+                            <p class="text-sm text-tierra-700"><strong>Universitat Pública:</strong> Actualment, el preu base és de 17,69 € per crèdit. Un curs estàndard consta de 60 crèdits. Multiplicant-ho i sumant-hi uns 141 € en concepte de taxes de gestió, suport a l'aprenentatge i assegurances, el preu de matrícula d'un curs sencer surt per uns 1.202 € a l'any.</p>
+                            <p class="text-sm text-tierra-700 mt-2"><strong>Universitat Privada:</strong> El ventall és immens. Una carrera en una universitat privada pot anar des dels 6.000 € fins a més de 15.000 € per any (Medicina o Odontologia són de les més cares).</p>
+                        </div>
+
+                        <div class="bg-white p-5 rounded-xl border-l-4 border-tierra-700 shadow-sm">
+                            <h3 class="font-bold text-tierra-900 mb-2">Màsters</h3>
+                            <ul class="text-sm text-tierra-700 space-y-2 list-disc pl-4">
+                                <li><strong>Habilitant (Públic):</strong> 1.200 € S'ha igualat al preu del grau (17,69 € / crèdit + taxes).</li>
+                                <li><strong>Especialització (Públic):</strong> 1.300 € - 2.000 € Depenent del grau d'experimentalitat, el crèdit va dels 19,37 € als 32,28 €. Ex: Un màster en Màrqueting Digital a la UB o UAB voltarà els 1.900 € el curs complet.</li>
+                                <li><strong>Especialització (Privat):</strong> 4.000 € - 25.000 €+ Un màster en una escola de negocis (Business School) tipus EADA o ESADE, o universitats privades, té preus lliures i molt més alts.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Estudis Online & Acredita't -->
+    <section class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                
+                <!-- 5.- Estudis online -->
+                <div>
+                    <h2 class="text-3xl font-serif text-tierra-800 mb-4">5.- Estudis online</h2>
+                    <div class="w-24 h-1 bg-tierra-300 rounded-full mb-8"></div>
+                    <div class="bg-tierra-50 p-6 rounded-2xl border border-tierra-100">
+                        <p class="text-tierra-900 font-bold text-lg mb-2">Universitat online: UNIR</p>
+                        <p class="text-tierra-700 mb-4 italic">Máster Universitario en Animación 3D para las Industrias del Entretenimiento</p>
+                        
+                        <div class="grid grid-cols-1 gap-4 mb-6">
+                            <div class="bg-white p-4 rounded-xl border border-green-100">
+                                <h4 class="font-bold text-green-700 mb-2 flex items-center"><i data-lucide="check-circle" class="w-4 h-4 mr-1"></i> Pros</h4>
+                                <ul class="text-xs text-tierra-700 space-y-2">
+                                    <li><strong>Classes en directe:</strong> A diferència d'altres centres, ofereixen sessions en viu on pots interactuar amb el professor. Si no hi pots assistir, queden gravades.</li>
+                                    <li><strong>Tutor personal:</strong> Des del primer dia tens un guia que t'ajuda amb la plataforma i et motiva si detecta que et despenges. No et sents sol.</li>
+                                    <li><strong>Flexibilitat real:</strong> Dissenyada per a gent que treballa, amb horaris de tarda/nit i una plataforma accessible des de qualsevol dispositiu.</li>
+                                    <li><strong>Avaluació contínua:</strong> Si entregues els treballs i participes als fòrums, arribes a l'examen amb gran part de la nota feta, reduint l'estrès final.</li>
+                                    <li><strong>Títols oficials:</strong> La majoria són reconeguts pel Ministeri, vàlids per a oposicions, doctorats i amb gran pes internacional.</li>
+                                </ul>
+                            </div>
+                            <div class="bg-white p-4 rounded-xl border border-red-100">
+                                <h4 class="font-bold text-red-700 mb-2 flex items-center"><i data-lucide="x-circle" class="w-4 h-4 mr-1"></i> Contres</h4>
+                                <ul class="text-xs text-tierra-700 space-y-2">
+                                    <li><strong>Preu elevat:</strong> Com a universitat privada, és força més cara que les opcions públiques (com la UNED o la UOC).</li>
+                                    <li><strong>Exàmens presencials:</strong> Tot i que les classes són online, els exàmens finals solen ser físics en seus específiques, cosa que t'obliga a desplaçar-te.</li>
+                                    <li><strong>Càrrega de treball:</strong> L'avaluació contínua exigeix constància setmanal; si t'adorms, la feina s'acumula ràpidament.</li>
+                                    <li><strong>Perfil comercial:</strong> El procés de matriculació pot ser una mica agressiu, amb moltes trucades i pressió per part dels assessors comercials.</li>
+                                    <li><strong>Networking limitat:</strong> Es perd el contacte social directe d'una universitat física; la interacció amb els companys és gairebé exclusivament digital.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <p class="text-sm text-tierra-800 border-t border-tierra-200 pt-4">Sincerament no em criden l'atenció cursos dels instituts online que he vist, algun té el mateix que he mencionat i d'altres la majoria son temes més de contabilitat, tecnologia, informàtica, administració, salut... m'agradaria potser cursar alguna cosa sobre psicologia o art.</p>
+                    </div>
+                </div>
+
+                <!-- 6.- Acredita't -->
+                <div>
+                    <h2 class="text-3xl font-serif text-tierra-800 mb-4">6.- Acredita't</h2>
+                    <div class="w-24 h-1 bg-tierra-300 rounded-full mb-8"></div>
+                    <div class="bg-tierra-50 p-6 rounded-2xl border border-tierra-100 h-full">
+                        <p class="text-tierra-800 mb-4 text-sm font-bold">Resum mitjançant del procés d' acreditacions, que és i com fer-ho:</p>
+                        <p class="text-tierra-700 text-sm mb-4">El procés d'acreditació és un servei obert tot l'any i es divideix en quatre passos principals:</p>
+                        
+                        <ul class="text-sm text-tierra-700 space-y-3 mb-6">
+                            <li><strong>Inscripció:</strong> Es realitza de manera telemàtica a través del portal de l'Agència FPCAT. Cal presentar el currículum i justificar l'experiència laboral (habitualment 2 o 3 anys depenent del nivell) o la formació no formal (entre 200 i 300 hores).</li>
+                            <li><strong>Assessorament:</strong> Un assessor t'ajuda a revisar el teu historial i t'indica si tens possibilitats d'èxit. T'ajuda a completar el teu "dossier de competències".</li>
+                            <li><strong>Avaluació:</strong> Una comissió avalua si realment saps fer la feina. No és un examen teòric memorístic, sinó proves pràctiques, entrevistes professionals o simulacions de situacions reals de treball.</li>
+                            <li><strong>Acreditació i registre:</strong> Si superes l'avaluació, reps una certificació oficial de la Generalitat. Aquesta certificació serveix per: Convalidar mòduls de títols d'FP (Grau Mitjà o Superior) i Obtenir un Certificat de Professionalitat.</li>
+                        </ul>
+
+                        <div class="bg-white p-4 rounded-xl border border-tierra-200">
+                            <h4 class="font-bold text-tierra-900 text-sm mb-2">Què són les unitats de competència:</h4>
+                            <p class="text-xs text-tierra-700 space-y-2">
+                                <span class="block mb-2">Aquest és el concepte més important de l'Acredita't.</span>
+                                <span class="block mb-2">La Unitat de Competència és la peça mínima d'una professió que es pot reconèixer oficialment. És el conjunt de coneixements i habilitats que permeten fer una tasca professional específica de forma autònoma.</span>
+                                <span class="block mb-2">Un títol d'FP o un Certificat Professional no és una sola cosa, sinó que està format per diverses Unitats de Competència.</span>
+                                <span class="block">En el procés d'acreditació, no t'acrediten "el títol sencer" de cop, sinó que vas sumant Unitats de Competència. Si les demostres totes, obtens el títol complet. Si només en demostres algunes, se't certifiquen aquestes i només t'hauràs d'examinar de les que et faltin si algun dia vols el títol oficial complet.</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ACTIC i Idiomes -->
+    <section class="py-20 bg-tierra-50 border-t border-tierra-200">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                
+                <!-- 7.- ACTIC -->
+                <div>
+                    <h2 class="text-2xl font-serif text-tierra-800 mb-4">7.- Acreditació en TIC (ACTIC)</h2>
+                    <div class="w-24 h-1 bg-tierra-300 rounded-full mb-6"></div>
+                    
+                    <div class="space-y-6 text-sm text-tierra-800">
+                        <div>
+                            <h3 class="font-bold text-tierra-900 mb-2">Quins són els tres nivells que existeixen?</h3>
+                            <p class="mb-2">Els certificats de l'ACTIC es divideixen en tres nivells segons el grau de domini de les TIC:</p>
+                            <ul class="list-disc pl-5 space-y-1 text-tierra-700">
+                                <li><strong>Nivell 1 (Certificat Bàsic):</strong> Demostra un domini elemental en l'ús de les TIC. L'examen avalua 6 competències tecnològiques.</li>
+                                <li><strong>Nivell 2 (Certificat Mitjà):</strong> Demostra un domini efectiu, sent un usuari autònom, capacitat i crític amb l'ús de les tecnologies. Avalua 8 competències.</li>
+                                <li><strong>Nivell 3 (Certificat Avançat):</strong> Certifica un nivell d'especialització i un domini ampli per aprofitar al màxim les prestacions de les TIC. Per presentar-s'hi, és obligatori tenir el nivell 2 aprovat. Cal examinar-se, com a mínim, de 2 competències específiques a escollir d'un total de cinc disponibles.</li>
+                            </ul>
+                        </div>
+                        
+                        <div>
+                            <h3 class="font-bold text-tierra-900 mb-2">Com us podeu inscriure?</h3>
+                            <p class="mb-2">Tot el procés és telemàtic i es fa a través del portal: https://actic.gencat.cat/ca/inici:</p>
+                            <ul class="list-disc pl-5 space-y-1 text-tierra-700">
+                                <li><strong>Registre i accés:</strong> Has d'accedir a l'apartat "Inscripció d'aspirant". Pots identificar-te amb el teu certificat digital (idCAT, DNIe, VÀLid) o, si és la primera vegada, omplir les teves dades personals i el DNI per crear el registre.</li>
+                                <li><strong>Sol·licitud:</strong> Un cop dins de la teva "Zona Privada", has d'iniciar una nova inscripció i triar el nivell (Bàsic, Mitjà o Avançat) del qual et vols examinar.</li>
+                                <li><strong>Pagament:</strong> S'ha d'abonar la taxa d'inscripció corresponent al nivell escollit.</li>
+                                <li><strong>Reserva:</strong> Un cop acceptada la sol·licitud i fet el pagament, l'aplicació et permetrà cercar un centre col·laborador i triar el dia i l'hora per fer l'examen a través del calendari disponible.</li>
+                            </ul>
+                        </div>
+
+                        <div>
+                            <h3 class="font-bold text-tierra-900 mb-2">3. Com és la prova d'avaluació?</h3>
+                            <p class="mb-2 text-tierra-700">La prova es fa obligatòriament de forma presencial al centre col·laborador que hagis triat, però és 100% telemàtica. Et posaran davant d'un ordinador i contestaràs les preguntes a través d'un navegador web, sense haver d'obrir ni instal·lar programes reals.</p>
+                            <p class="font-semibold text-tierra-800">Format de la prova (temps i preguntes):</p>
+                            <ul class="list-disc pl-5 text-tierra-700 mt-1">
+                                <li>Nivell 1 (Bàsic): 75 minuts i 40 activitats.</li>
+                                <li>Nivell 2 (Mitjà): 100 minuts i 70 activitats.</li>
+                                <li>Nivell 3 (Avançat): 35 minuts i 25 activitats per cada competència que hagis escollit.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 8.- Formació en idiomes -->
+                <div>
+                    <h2 class="text-2xl font-serif text-tierra-800 mb-4">8.- Idiomes i perfeccionament del català</h2>
+                    <div class="w-24 h-1 bg-tierra-300 rounded-full mb-6"></div>
+                    
+                    <div class="space-y-6 text-sm text-tierra-800 bg-white p-6 rounded-2xl shadow-sm border border-tierra-200">
+                        <div>
+                            <h3 class="font-bold text-tierra-900 mb-2 text-base">1. Sobre les Escoles Oficials d'Idiomes (EOI) i I'IOC</h3>
+                            <p class="mb-2"><strong>Quins idiomes pots cursar a les EOI?</strong> A les Escoles Oficials d'Idiomes de Catalunya s'hi imparteixen un gran nombre de llengües (fins a 15 de diferents depenent del centre). Els més comuns són l'anglès, l'alemany, el francès i l'italià, però en determinades seus també pots cursar: àrab, coreà, espanyol per a estrangers, euskera, gallec, grec, japonès, neerlandès, portuguès, rus i xinès. A més, a les EOI s'hi imparteix també el català.</p>
+                        </div>
+
+                        <div>
+                            <p class="font-bold mb-2">Com pots accedir a la convocatòria extraordinària de les EOI?</p>
+                            <ul class="list-none space-y-2 text-tierra-700">
+                                <li><strong>Calendari i centres:</strong> La convocatòria extraordinària serveix per examinar-se per lliure d'anglès (normalment B1, B2 i C1) a meitat de curs.</li>
+                                <li><strong>Com accedir-hi:</strong> La inscripció es fa exclusivament per internet mitjançant un tràmit telemàtic al web del Departament d'Educació de la Generalitat, a l'apartat de "Proves i títols". S'hi pot apuntar qualsevol persona de més de 16 anys abonant la taxa d'examen corresponent.</li>
+                                <li><strong>Calendari:</strong> Tot i que les dates exactes varien lleugerament cada any, les inscripcions solen obrir-se el mes de novembre. La prova escrita de la convocatòria extraordinària es realitza a finals de gener, mentre que les proves orals s'acostumen a fer al febrer.</li>
+                                <li><strong>Centres examinadors:</strong> En el moment de fer la matrícula telemàtica se't llistarà el llistat d'EOIs habilitades a Catalunya (que són la gran majoria) i tu podràs escollir el centre on vols anar a fer l'examen.</li>
+                            </ul>
+                        </div>
+
+                        <div>
+                            <p class="mb-2"><strong>Pots estudiar idiomes a l'IOC?</strong> L'Institut Obert de Catalunya disposa de la branca "EOI IOC", que permet estudiar idiomes i treure't certificats oficials de forma 100% online a distància. L'oferta que té és:</p>
+                            <ul class="list-disc pl-5 text-tierra-700 mb-4">
+                                <li><strong>Anglès:</strong> Fins a assolir el nivell intermedi B2.</li>
+                                <li><strong>Alemany:</strong> Nivells A1, A2 i C1 (avançat).</li>
+                                <li><strong>Català:</strong> Nivell superior C2.</li>
+                            </ul>
+                        </div>
+
+                        <div class="border-t border-tierra-200 pt-4">
+                            <p class="font-bold text-tierra-900 mb-2">Quin és el nivell que tenim de català per haver cursat l'ESO? I el BAT?</p>
+                            <p class="mb-2 text-tierra-700">Depén de l'any en que els vam cursar.</p>
+                            <ul class="list-disc pl-5 space-y-1 text-tierra-700 mb-4">
+                                <li><strong>Per l'ESO:</strong> S'acredita l'equivalència amb el Nivell C1 sempre que s'hagi aprovat des del curs 2007-2008 endavant i es justifiqui haver cursat a Catalunya almenys 3 cursos de primària més tota l'ESO. Si es abans del 2007 és un B2.</li>
+                                <li><strong>Amb el Batxillerat:</strong> S'acredita també l'equivalència amb el Nivell C1, independentment que sigui del sistema LOGSE o el BUP antic, sempre que tota l'etapa s'hagi cursat a Catalunya amb l'assignatura de català aprovada.</li>
+                            </ul>
+
+                            <p class="font-bold text-tierra-900 mb-2">Quines opcions tinc per cursar el nivell C2 de català?</p>
+                            <ul class="list-disc pl-5 space-y-2 text-tierra-700">
+                                <li><strong>EOI Presencials i Semipresencials:</strong> Algunes EOI ofereixen els cursos presencials de català de nivell C2 (per exemple, a diverses seus o centres delegats a les diferents comarques).</li>
+                                <li><strong>IOC (EOI a distància):</strong> a l'Institut Obert de Catalunya ofereixen el curs anual de Català C2, ideal per estudiar a distància al teu ritme i a través de la plataforma virtual.</li>
+                                <li><strong>CPNL (Consorci per a la Normalització Lingüística):</strong> Ofereix centenars de cursos de Nivell Superior (C2) arreu dels pobles i ciutats de Catalunya. Pots fer el curs d'un semestre i examinar-te directament amb ells de forma oficial.</li>
+                                <li><strong>Cursos Universitaris:</strong> Universitats i serveis lingüístics vinculats preparen estudiants amb cursos monogràfics de C2 que estan oberts sovint a tot el públic.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Línia Temporal (Moguda al final) -->
+    <section class="py-24 bg-white">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-serif text-tierra-800 mb-4 uppercase tracking-wide">Línia Temporal</h2>
+                <p class="text-tierra-600 text-lg">Què penso fer en els pròxims anys</p>
+                <div class="w-24 h-1 bg-tierra-300 mx-auto rounded-full mt-6"></div>
+            </div>
+
+            <div class="relative mt-12">
+                <!-- Línia Vertical Central -->
+                <div class="absolute left-6 md:left-1/2 md:-ml-0.5 top-0 bottom-0 w-1 bg-tierra-200 rounded-full"></div>
+
+                <div class="space-y-12">
+                    
+                    <!-- 2025-26 -->
+                    <div class="relative flex flex-col md:flex-row items-center md:justify-between w-full group">
+                        <!-- Punt rodó -->
+                        <div class="absolute left-6 md:left-1/2 md:-translate-x-1/2 w-5 h-5 rounded-full bg-tierra-500 border-4 border-white shadow ring-2 ring-tierra-100 z-10 group-hover:bg-tierra-700 transition-colors duration-300"></div>
+                        <!-- Contingut (Esquerra) -->
+                        <div class="ml-16 md:ml-0 md:w-5/12 md:text-right pr-0 md:pr-10 w-full">
+                            <span class="inline-block text-tierra-500 font-bold mb-1 tracking-wider">2025-26</span>
+                            <h3 class="text-xl font-bold text-tierra-900 mb-2">Treure'm el primer any de DC</h3>
+                            <p class="text-tierra-700 bg-tierra-50 p-5 rounded-xl border border-tierra-100 shadow-sm md:inline-block text-left md:text-right">Acabar aquest curs si pot ser amb una mitjana de 9 o més.</p>
+                        </div>
+                        <div class="hidden md:block md:w-5/12"></div>
+                    </div>
+
+                    <!-- 2026 -->
+                    <div class="relative flex flex-col md:flex-row items-center md:justify-between w-full group">
+                        <div class="absolute left-6 md:left-1/2 md:-translate-x-1/2 w-5 h-5 rounded-full bg-tierra-500 border-4 border-white shadow ring-2 ring-tierra-100 z-10 group-hover:bg-tierra-700 transition-colors duration-300"></div>
+                        <div class="hidden md:block md:w-5/12"></div>
+                        <!-- Contingut (Dreta) -->
+                        <div class="ml-16 md:ml-0 md:w-5/12 pl-0 md:pl-10 w-full text-left">
+                            <span class="inline-block text-tierra-500 font-bold mb-1 tracking-wider">2026</span>
+                            <h3 class="text-xl font-bold text-tierra-900 mb-2">Treballar a la Boella</h3>
+                            <p class="text-tierra-700 bg-tierra-50 p-5 rounded-xl border border-tierra-100 shadow-sm">Tornar a treballar a la Boella aquest estiu i aspirar a un ascens de rang de treball, estalviar per un futur i aprendre.</p>
+                        </div>
+                    </div>
+
+                    <!-- 2026-27 -->
+                    <div class="relative flex flex-col md:flex-row items-center md:justify-between w-full group">
+                        <div class="absolute left-6 md:left-1/2 md:-translate-x-1/2 w-5 h-5 rounded-full bg-tierra-500 border-4 border-white shadow ring-2 ring-tierra-100 z-10 group-hover:bg-tierra-700 transition-colors duration-300"></div>
+                        <!-- Contingut (Esquerra) -->
+                        <div class="ml-16 md:ml-0 md:w-5/12 md:text-right pr-0 md:pr-10 w-full">
+                            <span class="inline-block text-tierra-500 font-bold mb-1 tracking-wider">2026-27</span>
+                            <h3 class="text-xl font-bold text-tierra-900 mb-2">Treure'm el segon any de DC</h3>
+                            <p class="text-tierra-700 bg-tierra-50 p-5 rounded-xl border border-tierra-100 shadow-sm text-left md:text-right md:inline-block">Treure'm el segony any amb la millor mitja final dels CS per optar per la beca d'excelencia.</p>
+                        </div>
+                        <div class="hidden md:block md:w-5/12"></div>
+                    </div>
+
+                    <!-- 2027 -->
+                    <div class="relative flex flex-col md:flex-row items-center md:justify-between w-full group">
+                        <div class="absolute left-6 md:left-1/2 md:-translate-x-1/2 w-5 h-5 rounded-full bg-tierra-500 border-4 border-white shadow ring-2 ring-tierra-100 z-10 group-hover:bg-tierra-700 transition-colors duration-300"></div>
+                        <div class="hidden md:block md:w-5/12"></div>
+                        <!-- Contingut (Dreta) -->
+                        <div class="ml-16 md:ml-0 md:w-5/12 pl-0 md:pl-10 w-full text-left">
+                            <span class="inline-block text-tierra-500 font-bold mb-1 tracking-wider">2027</span>
+                            <h3 class="text-xl font-bold text-tierra-900 mb-2">Aconseguir la Beca</h3>
+                            <p class="text-tierra-700 bg-tierra-50 p-5 rounded-xl border border-tierra-100 shadow-sm">Amb sort i esforç aconseguir la beca d'estudis per tindre més facilitats per continuar estudiant.</p>
+                        </div>
+                    </div>
+
+                    <!-- Continuar estudiant -->
+                    <div class="relative flex flex-col md:flex-row items-center md:justify-between w-full group">
+                        <div class="absolute left-6 md:left-1/2 md:-translate-x-1/2 w-5 h-5 rounded-full bg-tierra-500 border-4 border-white shadow ring-2 ring-tierra-100 z-10 group-hover:bg-tierra-700 transition-colors duration-300"></div>
+                        <!-- Contingut (Esquerra) -->
+                        <div class="ml-16 md:ml-0 md:w-5/12 md:text-right pr-0 md:pr-10 w-full">
+                            <span class="inline-block text-tierra-500 font-bold mb-1 tracking-wider opacity-0 hidden md:block">-</span>
+                            <h3 class="text-xl font-bold text-tierra-900 mb-2">Continuar estudiant</h3>
+                            <p class="text-tierra-700 bg-tierra-50 p-5 rounded-xl border border-tierra-100 shadow-sm text-left md:text-right md:inline-block">Fer algun curs específic o si les condicions es tornen poder estudiar en una gran escola mitjançant estalvis i beques.</p>
+                        </div>
+                        <div class="hidden md:block md:w-5/12"></div>
+                    </div>
+
+                    <!-- 2027 - X -->
+                    <div class="relative flex flex-col md:flex-row items-center md:justify-between w-full group">
+                        <div class="absolute left-6 md:left-1/2 md:-translate-x-1/2 w-5 h-5 rounded-full bg-tierra-500 border-4 border-white shadow ring-2 ring-tierra-100 z-10 group-hover:bg-tierra-700 transition-colors duration-300"></div>
+                        <div class="hidden md:block md:w-5/12"></div>
+                        <!-- Contingut (Dreta) -->
+                        <div class="ml-16 md:ml-0 md:w-5/12 pl-0 md:pl-10 w-full text-left">
+                            <span class="inline-block text-tierra-500 font-bold mb-1 tracking-wider">2027 - X</span>
+                            <h3 class="text-xl font-bold text-tierra-900 mb-2">Continuar formant-me</h3>
+                            <p class="text-tierra-700 bg-tierra-50 p-5 rounded-xl border border-tierra-100 shadow-sm">Continuar formant-me en diferents restaurants aprenent de diferents chefs i estalviar.</p>
+                        </div>
+                    </div>
+
+                    <!-- 2029-2030 -->
+                    <div class="relative flex flex-col md:flex-row items-center md:justify-between w-full group">
+                        <!-- El punt final és més gran i destacat -->
+                        <div class="absolute left-6 md:left-1/2 md:-translate-x-1/2 w-7 h-7 rounded-full bg-[#8c6b5d] border-4 border-white shadow-lg ring-4 ring-[#8c6b5d]/30 z-10"></div>
+                        <!-- Contingut (Esquerra) -->
+                        <div class="ml-16 md:ml-0 md:w-5/12 md:text-right pr-0 md:pr-10 w-full">
+                            <span class="inline-block text-[#8c6b5d] font-black mb-1 tracking-wider text-lg">2029-2030</span>
+                            <h3 class="text-2xl font-bold text-[#8c6b5d] mb-2">Cap o Chef</h3>
+                            <p class="text-tierra-800 bg-[#f4ece7] p-5 rounded-xl border-2 border-[#8c6b5d] shadow-md text-left md:text-right md:inline-block font-medium">Aconseguir ser Cap de Cuina o Segon d'un establiment important de cuina d'autor local amb alguna recomanació a la guia.</p>
+                        </div>
+                        <div class="hidden md:block md:w-5/12"></div>
+                    </div>
+
+                </div>
             </div>
         </div>
     </section>
@@ -472,7 +986,7 @@
         <div class="max-w-6xl mx-auto px-4 text-center">
             <span class="font-serif font-bold text-2xl tracking-tight text-white mb-4 block">IPOP Andrea Mora Blas</span>
             <p class="text-sm">Projecte de classe desenvolupat per Andrea Mora Blas (CS DC1 2025-2026).</p>
-            <p class="text-xs mt-2 text-tierra-400">Disseny web creat a partir de documents d'avaluació personal.</p>
+            <p class="text-xs mt-2 text-tierra-400">Disseny web creat a partir de documents d'avaluació personal i orientació professional.</p>
         </div>
     </footer>
 
