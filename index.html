@@ -885,27 +885,11 @@
             </div>
 
             <div class="flex flex-col items-center mt-12 w-full">
-                <!-- Imatge neta amb efecte clic per ampliar -->
-                <img src="LINIA_TEMPORAL.jpg" alt="Línia Temporal" class="w-full max-w-4xl rounded-2xl shadow-lg border border-tierra-200 cursor-pointer hover:shadow-2xl hover:scale-[1.01] transition-all duration-300" onclick="openModal()">
-                <p class="text-sm text-tierra-500 mt-4 italic flex items-center">
-                    <i data-lucide="zoom-in" class="w-4 h-4 mr-1"></i> Fes clic a la imatge per ampliar-la
-                </p>
+                <!-- Imatge neta i senzilla -->
+                <img src="LINIA_TEMPORAL.jpg" alt="Línia Temporal" class="w-full max-w-4xl rounded-2xl shadow-lg border border-tierra-200">
             </div>
         </div>
     </section>
-
-    <!-- Modal fosc per ampliar la imatge -->
-    <div id="imageModal" class="fixed inset-0 z-[100] hidden bg-black/80 backdrop-blur-sm flex items-center justify-center p-4 transition-opacity opacity-0 duration-300" onclick="closeModal()">
-        <div class="relative max-w-6xl w-full max-h-[90vh] flex flex-col items-center justify-center">
-            <div class="w-full flex justify-end mb-4">
-                <button class="text-white hover:text-tierra-300 transition-colors bg-black/50 hover:bg-black/80 rounded-full p-2" onclick="closeModal()">
-                    <i data-lucide="x" class="w-6 h-6"></i>
-                </button>
-            </div>
-            <!-- La imatge ampliada (event.stopPropagation evita que es tanqui al fer clic a la pròpia imatge) -->
-            <img src="LINIA_TEMPORAL.jpg" alt="Línia Temporal Ampliada" class="max-w-full max-h-[85vh] object-contain rounded-lg shadow-2xl cursor-default" onclick="event.stopPropagation()">
-        </div>
-    </div>
 
     <!-- Footer -->
     <footer class="bg-tierra-900 text-tierra-200 py-8 border-t border-tierra-800">
@@ -918,24 +902,6 @@
 
     <!-- Script per inicialitzar Icones i Gràfic -->
     <script>
-        // Funcions per al Modal de la Imatge Ampliable
-        function openModal() {
-            const modal = document.getElementById('imageModal');
-            modal.classList.remove('hidden');
-            // Petit retard perquè l'animació d'opacitat funcioni bé
-            setTimeout(() => modal.classList.remove('opacity-0'), 10);
-            document.body.style.overflow = 'hidden'; // Bloqueja l'scroll del fons
-        }
-
-        function closeModal() {
-            const modal = document.getElementById('imageModal');
-            modal.classList.add('opacity-0');
-            setTimeout(() => {
-                modal.classList.add('hidden');
-                document.body.style.overflow = 'auto'; // Restaura l'scroll
-            }, 300);
-        }
-
         // Inicialitzar icones
         lucide.createIcons();
 
